@@ -1,0 +1,86 @@
+/* Universal Style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7ecde;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+::selection {
+    background-color: #ffcc0057; 
+    color: #000; 
+}
+
+h1::selection {
+    background-color: #ffcc0057;
+    color: #000;
+}
+
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    position: relative;
+    width: fit-content;
+}
+
+h2 {
+    font-family: 'Righteous', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Section Style */
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+h1:hover::before {
+    height: 50%;
+}
+
+.btn-orange {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #D15134;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #b02a37;
+    --bs-btn-focus-shadow-rgb: 225, 83, 97;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #b02a37;
+    --bs-btn-active-border-color: #a52834;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #dc3545;
+    --bs-btn-disabled-border-color: #dc3545;
+  }
+
+  .fav-bookmarks{
+    border-top: #000 dotted 2px;
+    border-bottom: #000 dotted 2px;
+  }
+
+  .fav-bookmarks i{
+    font-size: 25px;
+  }
+
+  .fav-bookmarks h2 {
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
